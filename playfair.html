@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand navbar-primary navbar-dark ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="" role="button"><i class="fas fa-bars"></i></a>
+              </li>
+              <li>
+                <a class="nav-link text-white"  href="#" role="button"> <large><b>Substitution Cipher Implementation</b></large></a>
+              </li>
+            </ul>
+        
+            <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                      <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                  </li>
+        
+             
+            </ul>
+          </nav>
+    
+          <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="index3.html" class="brand-link">
+              <img src="logo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8">
+              <span class="brand-text font-weight-light">CNS LAB</span>
+            </a>
+          
+            <div class="sidebar">
+              <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
+                  <li class="nav-item dropdown">
+                    <a href="index3.html" class="nav-link nav-home">
+                      <i class="nav-icon fas fa-tachometer-alt"></i>
+                      <p>
+                        Dashboard
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="caesar.html" class="nav-link ">
+                      <i class="nav-icon fas fa-th-list"></i>
+                      <p>
+                        Caesar Cipher
+                      </p>
+                    </a>
+                  </li> 
+          
+                  <li class="nav-item dropdown">
+                    <a href="shift.html" class="nav-link">
+                      <i class="nav-icon fas fa-list-alt"></i>
+                      <p>
+                       Shift Cipher
+                      </p>
+                    </a>
+                  </li> 
+          
+          
+                  <li class="nav-item dropdown">
+                    <a href="mono.html" class="nav-link">
+                      <i class="nav-icon fas fa-list-alt"></i>
+                      <p>
+                       MonoAlphabetic
+                      </p>
+                    </a>
+                  </li> 
+          
+                  
+                  <li class="nav-item dropdown">
+                    <a href="polyalphabetic.html" class="nav-link">
+                      <i class="nav-icon fas fa-list-alt"></i>
+                      <p>poly Alphabetic</p>
+                    </a>
+              </li>
+                  
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-x-diamond-fill"></i>
+                 <!-- <i class="nav-icon fa ion-ios-people-outline"></i>--> 
+                  <p>
+                       BONUS
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="playfair.html" class="nav-link">
+                      <i class="fas fa-angle-right nav-icon"></i>
+                      <p>Play Fair</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="hill.html" class="nav-link">
+                      <i class="fas fa-angle-right nav-icon"></i>
+                      <p>Hill Cipher</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+          
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                      <div class="col-sm-6">
+                        <h1 class="m-0">Play Fair cipher </h1>
+                      </div><!-- /.col -->
+                      
+                      <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active">PlayFair </li>
+                        </ol>
+                      </div><!-- /.col -->    
+                    </div><!-- /.row -->
+                  </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  Description about play fair encryption and decryption will be attached here...
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                     <h1>Playfair Cipher</h1>
+    
+    <div id="inSec">
+      <p id="inputT">Keyword: </p>
+      <input id="intext" type="text" name="keyword">
+      <button class="btn btn-primary" id="subButton" type="button">Submit</button><br>
+    <div id="EDMenu">
+      <p id="inputT">Select Operation To Proceed: </p>
+      <button type="button" id="encButton0" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        Encrypt
+      </button>
+   <!-- <button id="encButton0" type="button">Encrypt</button>-->   
+   <button type="button" id="decButton0" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
+   Decrypt
+   </button>
+  <!--  <button id="decButton0" type="button">Decrypt</button> -->    
+    </div>
+    </div>
+                </div>
+            </div>
+        </div>
+       
+        <footer class="main-footer">
+            <strong> &copy; 2014-2015 <a href="#">Dire Dawa University,ECE,computer Engineering,Group 1</a>.</strong>
+          <div class="float-right d-none d-sm-inline-block">
+            <b>Substitution Cipher Implementation</b>
+          </div>
+    </div>
+    
+<!-- need to use "strip" function in encrypt.js -->
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Encryption</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+             
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Home</button>
+           <!-- <p id="Decrypt"><a href="decrypt.html">Decrypt</a></p>-->
+            <button type="button" id="decButton0" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
+              Decrypt
+              </button>
+          <h1>Playfair Cipher</h1>
+          
+          <div id="inSec">
+          <div id="encForm">
+              <p id="inputP">Plaintext </p><br>
+              <textarea id="textP"name="plainM"></textarea>
+              <button id="encButton" type="button">Encrypt</button>
+          </div>
+          </div>
+              <pre id="encT"></pre>
+          
+          <script src="scripts/encrypt.js"></script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="staticBackdrop1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="encButton0" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+              Encrypt
+            </button>
+            <h1>Playfair Cipher</h1>
+
+
+            <div id="inSec">
+            <div id="decForm">
+                <p id="inputC">Ciphertext</p><br>
+                <textarea id="textC"name="cipherM"></textarea>
+                <button id="decButton" type="button">Decrypt</button>
+            </div>
+            </div>
+                <pre id="decT"></pre>
+
+            <script src="scripts/decrypt.js"></script>
+            <script src="scripts/encrypt.js"></script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/adminlte.js"></script>
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="dist/js/demo.js"></script>
+<script src="dist/js/pages/dashboard3.js"></script>
+<script src="scripts/encrypt.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+   
+    
+  </head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+   
+      <nav class="main-header navbar navbar-expand navbar-primary navbar-dark ">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li>
+            <a class="nav-link text-white"  href="#" role="button"> <large><b>Substitution Cipher Implementation</b></large></a>
+          </li>
+        </ul>
+    
+        <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+              </li>
+    
+         
+        </ul>
+      </nav>
+
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <a href="index3.html" class="brand-link">
+          <img src="logo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8">
+          <span class="brand-text font-weight-light">CNS LAB</span>
+        </a>
+      
+        <div class="sidebar">
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item dropdown">
+                <a href="index3.html" class="nav-link nav-home">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="caesar.html" class="nav-link btn-primary text-white">
+                  <i class="nav-icon fas fa-th-list"></i>
+                  <p>
+                    Caesar Cipher
+                  </p>
+                </a>
+              </li> 
+      
+              <li class="nav-item dropdown">
+                <a href="shift.html" class="nav-link">
+                  <i class="nav-icon fas fa-list-alt"></i>
+                  <p>
+                   Shift Cipher
+                  </p>
+                </a>
+              </li> 
+      
+      
+              <li class="nav-item dropdown">
+                <a href="mono.html" class="nav-link">
+                  <i class="nav-icon fas fa-list-alt"></i>
+                  <p>
+                   MonoAlphabetic
+                  </p>
+                </a>
+              </li> 
+      
+              
+              <li class="nav-item dropdown">
+                <a href="polyalphabetic.html" class="nav-link">
+                  <i class="nav-icon fas fa-list-alt"></i>
+                  <p>poly Alphabetic</p>
+                </a>
+          </li>
+              
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-x-diamond-fill"></i>
+             <!-- <i class="nav-icon fa ion-ios-people-outline"></i>--> 
+              <p>
+                   BONUS
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="playfair.html" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Play Fair</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="hill.html" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Hill Cipher</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    <div class="content-wrapper">
+        
+    <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Caesar cipher </h1>
+            </div><!-- /.col -->
+            
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Caesar Cipher </li>
+              </ol>
+            </div><!-- /.col -->    
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+        <div class="card">
+            <div class="card-body">
+   
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                Encryption
+              </button>
+ 
+              <button type="button" class="btn btn-danger float-right" data-toggle="modal" data-target="#staticBackdrop1">
+                decryption
+              </button>
+                
+ 
+            </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              Description about caesar encryption and decryption will be attached here...
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+<footer class="main-footer">
+  <strong> &copy; 2014-2015 <a href="#">Dire Dawa University,ECE,computer Engineering,Group 1</a>.</strong>
+<div class="float-right d-none d-sm-inline-block">
+  <b>Substitution Cipher Implementation</b>
+</div>
+</footer>
+
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Caesar Encryption</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="mainContainer">
+          <h1>Caesar's Cipher</h1>
+
+          <label for="original">Original(plain-text) </label>
+          <input id="original" type="text" value="">
+
+           
+          <input id="shiftt" type="hidden" placeholder="3" value="3" max="3" min="3">
+
+          <hr>
+
+          <label for="encrypted">Encrypted Message</label>
+          <input id="encrypted" type="text" value="" readonly>
+
+          
+        </div>
+        <script>
+          let originalInputt = document.querySelector("#original");
+          let shiftInputt = document.querySelector("#shiftt");
+          let encryptedInputt = document.querySelector("#encrypted");
+      
+          let originalMessagee = originalInputt.value;
+      
+          originalInputt.addEventListener("input", characterEntered, false);
+          shiftInputt.addEventListener("input", numberEntered, false);
+      
+          function characterEntered(e) {
+            // Ensure we only deal with lowercase letters
+            originalMessagee = e.target.value;
+            originalMessagee = originalMessagee.toLowerCase();
+            originalMessagee = originalMessagee.replace(/[^a-z]/, '');
+      
+            e.target.value = originalMessagee;
+      
+            // Let's get the party started!
+            startEncryptionn();
+          }
+      
+          function numberEntered(e) {
+            startEncryptionn();
+          }
+      
+          function startEncryptionn() {
+            let encryptedMessage = "";
+            let shift = shiftInputt.value ? Number(shiftInputt.value) : 0;
+            console.log(shift);
+      
+            for (letter of originalMessagee) {
+              encryptedMessage += shiftLetter(letter, shift);
+            }
+      
+            console.log(encryptedMessage);
+            encryptedInputt.value = encryptedMessage;
+          }
+          startEncryptionn();
+      
+          function shiftLetter(letter, shift) {
+            let newLetter = "";
+      
+            let letterCode = letter.charCodeAt(0);
+            let newLetterCode = letterCode + (shift % 26);
+      
+            if (newLetterCode < 97) {
+              // If new letter goes below "a" aka character code 97
+              newLetterCode += 26;
+            } else if (newLetterCode > 122) {
+              // If new letter goes past "z" aka character code 122
+              newLetterCode -= 26;
+            }
+      
+            newLetter = String.fromCharCode(newLetterCode);
+      
+            return newLetter;
+          }
+        </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- decryption-->
+<div class="modal fade" id="staticBackdrop1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Caesar's Cipher Decryption</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <div class="mainContainer">
+                  <h1>Caesar's Cipher</h1>
+
+                  <label for="original">Encrypted Message</label>
+                  <input id="originall" type="text" value="abcd">
+
+                  <input id="shift" type="hidden" placeholder="3" value="-3" max="-3" min="-3">
+
+                  <hr>
+
+                  <label for="encrypted">Decrypted Message</label>
+                  <input id="encryptedd" type="text" value="" readonly>
+
+                  
+                </div>
+                <script>
+                  let originalInput = document.querySelector("#originall");
+                  let shiftInput = document.querySelector("#shift");
+                  let encryptedInput = document.querySelector("#encryptedd");
+              
+                  let originalMessage = originalInput.value;
+              
+                  originalInput.addEventListener("input", characterEntered, false);
+                  shiftInput.addEventListener("input", numberEntered, false);
+              
+                  function characterEntered(e) {
+                    // Ensure we only deal with lowercase letters
+                    originalMessage = e.target.value;
+                    originalMessage = originalMessage.toLowerCase();
+                    originalMessage = originalMessage.replace(/[^a-z]/, '');
+              
+                    e.target.value = originalMessage;
+              
+                    // Let's get the party started!
+                    startEncryption();
+                  }
+              
+                  function numberEntered(e) {
+                    startEncryption();
+                  }
+              
+                  function startEncryption() {
+                    let encryptedMessage = "";
+                    let shift = shiftInput.value ? Number(shiftInput.value) : 0;
+                    console.log(shift);
+              
+                    for (letter of originalMessage) {
+                      encryptedMessage += shiftLetter(letter, shift);
+                    }
+              
+                    console.log(encryptedMessage);
+                    encryptedInput.value = encryptedMessage;
+                  }
+                  startEncryption();
+              
+                  function shiftLetter(letter, shift) {
+                    let newLetter = "";
+              
+                    let letterCode = letter.charCodeAt(0);
+                    let newLetterCode = letterCode + (shift % 26);
+              
+                    if (newLetterCode < 97) {
+                      // If new letter goes below "a" aka character code 97
+                      newLetterCode += 26;
+                    } else if (newLetterCode > 122) {
+                      // If new letter goes past "z" aka character code 122
+                      newLetterCode -= 26;
+                    }
+              
+                    newLetter = String.fromCharCode(newLetterCode);
+              
+                    return newLetter;
+                  }
+                </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/adminlte.js"></script>
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="dist/js/demo.js"></script>
+<script src="dist/js/pages/dashboard3.js"></script>
+</body>
+</html>
